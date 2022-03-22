@@ -6,7 +6,7 @@ get '/' do
 end
 
 get '/secret' do
-  "Changed message"
+  "Shhhh..."
 end
 
 get '/ruby' do
@@ -18,7 +18,5 @@ get '/sinatra' do
 end
 
 get '/cat' do
-  "<div style= 'border: 20px dashed red'>
-  <img src='https://i.imgur.com/jFaSxym.png' />
-  </div>"
+  erb(:index)
 end
